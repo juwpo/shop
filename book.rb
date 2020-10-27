@@ -1,0 +1,3 @@
+class Book < Shop
+
+end
