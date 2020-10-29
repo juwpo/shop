@@ -1,7 +1,7 @@
 
 class Shop
 
-  attr_reader :amount , :price
+  attr_reader :amount , :price , :name, :genre, :director, :year
 
   def initialize(params)
     @amount = params[:amount]
