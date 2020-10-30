@@ -1,9 +1,17 @@
 class Film < Shop
+
+  attr_reader :film, :director, :year
+
   def initialize(params)
     super
-    @name = params[:name],
-        @genre = params[:genre],
-        @director = params[:director],
-        @year = params[:year]
+    @film = params[:film]
+    @director = params[:director]
+    @year = params[:year]
   end
+
+  def to_s
+    super
+    "#{@film}, реж - #{@director}, выпуск #{@year} год ,#{super}"
+  end
+
 end

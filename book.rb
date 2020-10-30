@@ -1,9 +1,17 @@
 class Book < Shop
+
+  attr_reader :book, :genre, :author
+
   def initialize(params)
     super
-    @name = params[:name],
-    @genre = params[:genre],
-        @author = params[:author],
-        @year = params[:year]
+    @book = params[:book]
+    @genre = params[:genre]
+    @author = params[:author]
   end
+
+  def to_s
+    super
+    "Книга - #{@book},жанр - #{@genre}#,автор - #{@author}, #{super}"
+  end
+
 end
