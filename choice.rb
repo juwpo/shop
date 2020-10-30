@@ -6,9 +6,9 @@ if Gem.win_platform?
     io.set_encoding(Encoding.default_external, Encoding.default_internal)
   end
 end
-require_relative 'shop.rb'
-require_relative 'film.rb'
-require_relative 'book.rb'
+require_relative 'lib/shop.rb'
+require_relative 'lib/film.rb'
+require_relative 'lib/book.rb'
 
 product = []
 product << Film.new(film:'Халк' ,year: 2003,director:'Энг Ли',price: 2600,amount: 10)
